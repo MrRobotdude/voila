@@ -16,3 +16,4 @@ header>div:first-child{flex:1 1 auto}
 @media(min-width:901px){.navbar a.icon{display:none}}
 @media(max-width:900px){header{padding:8px 4%;align-items:flex-start}header>div:first-child{flex:0 0 60px}#logo{width:38px}.navbar{flex:1;max-width:calc(100% - 76px)}#container{gap:26px}#container>.content1{flex:1 1 240px}}
 @media(max-width:600px){header{padding:8px 16px}#container{display:block}#prev,#next{font-size:36px}.content1{width:100%}}
+.dropdown.open .drop-content>a,.dropdown:focus-within .drop-content>a{display:block}
