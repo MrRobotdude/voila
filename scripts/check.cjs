@@ -1,0 +1,3 @@
+const fs=require('fs'),path=require('path'),vm=require('vm');let count=0;
+function walk(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,entry.name);if(entry.isDirectory())walk(file);else if(file.endsWith('.html')){count++;for(const match of fs.readFileSync(file,'utf8').matchAll(/(?:href|src)="([^"#]+)"/g)){const url=match[1];if(/^(https?:|mailto:|javascript:|data:)/.test(url))continue;const resolved=path.resolve(path.dirname(file),decodeURIComponent(url.split('#')[0]));if(!fs.existsSync(resolved))throw Error(file+': missing '+url);}}else if(file.endsWith('.js'))new vm.Script(fs.readFileSync(file,'utf8'),{filename:file});}}
+walk('site');console.log(count+' HTML pages: local links, assets and JavaScript syntax passed.');

@@ -1,0 +1,1 @@
+function show(icon){const navbar=document.getElementById('myNavbar');const expanded=navbar.classList.toggle('responsive');icon.classList.toggle('change',expanded);icon.setAttribute('aria-expanded',String(expanded));icon.setAttribute('aria-controls','myNavbar');}

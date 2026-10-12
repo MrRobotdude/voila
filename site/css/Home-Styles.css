@@ -1,0 +1,272 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #cccccc;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: relative;
+    display: flex;
+    background-color: white;
+    vertical-align: center;
+}   
+
+#logo{
+    float: left;
+    padding-left: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 5%;
+    height: auto;
+}
+
+.dropdown{
+    overflow: hidden;
+    float: left;
+}
+
+.dropbtn{
+    display: inline-block;
+}
+
+.drop-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 10px 10px black;
+    z-index: 1;
+    top: 100%;
+}
+
+.drop-content a{
+    float: none;
+    display: block;
+}
+
+.dropdown:hover .drop-content{
+    display: block;
+}
+
+.dropdown:hover .dropbtn{
+    background-color: #333333;
+    color: white;
+}
+
+.navbar{
+    overflow: hidden;
+}
+
+.navbar a{
+    float: left;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 1.5em;
+}
+
+.navbar a:hover{
+    background-color: #333333;
+    color: white;
+}
+
+.navbar a.currentPage{
+    background-color: #333333;
+    color: white;
+}
+
+.bar1, .bar2, .bar3{
+    width: 30px;
+    height: 3px;
+    background-color: #333333;
+    margin: 3px 0;
+    transition: 0.5s;
+}
+
+.navbar a:hover .bar1,.navbar a:hover .bar2,.navbar a:hover .bar3{
+    background-color: white;
+}
+
+.change .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 4px);
+    transform: rotate(-45deg) translate(-6px, 4px); 
+    background-color: white;
+}
+
+.change .bar2{
+    opacity: 0;
+}
+
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-4px, -4px);
+    transform: rotate(45deg) translate(-4px, -4px); 
+    background-color: white;
+}
+
+.navbar .icon{
+    display: none;
+}
+
+@media only screen and (max-width: 1500px){
+    .navbar a{
+        display: none;
+    }
+    .navbar a.icon{
+        float: right;
+        display: block;
+    }
+    
+    #logo{
+        width: 3%;
+    }
+}
+
+@media screen and (max-width: 1500px){
+    .navbar.responsive{
+        position: relative;
+    }
+    .navbar.responsive a.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar.responsive .dropdown{
+        float: none;
+    }
+
+    .navbar.responsive .drop-content{
+        position: relative;
+    }
+
+    .navbar.responsive .dropdown .dropbtn{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    header{
+        display: block;
+    }
+}
+
+#content{
+    position: relative;
+}
+
+#text{
+    text-align: center;
+}
+
+.title{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.paragraph{
+    font-weight: lighter;
+    font-size: 1.3em;
+    padding: 0 5px;
+}
+
+.contentPicture{
+    width: 95%;
+    height: auto;
+}
+
+#container{
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 5% 10%;
+}
+
+.slider-container{
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.sliderImg{
+    position:relative;
+    height: 60%;
+    object-fit: cover;
+}
+
+.sliderImg img{
+    width: 100%;
+    margin-top: -20%;
+}
+
+.sliderImg p{
+    color: #f2f2f2;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    opacity: 0.8;
+    font-weight: lighter;
+}
+
+
+#prev, #next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+#next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#prev:hover, #next:hover{
+    background-color: black;
+}
+
+footer{
+    background-color: #333333;
+    display: block;
+    color: white;
+    padding: 1%;
+    text-align: center;
+}
+
+.socmed{
+    width: 25px;
+    height: 25px;
+    padding: 0 5px;
+}
+
+#socmed{
+    display: flex;
+    justify-content: center;
+}
+
+

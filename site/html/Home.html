@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Voila — an interactive HCI design demonstration by Doddie Prawarjito.">
+    <script defer src="../script/portfolio-fixes.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Voila</title>
+    <script src="../script/jquery-3.5.0.min.js"></script>
+    <script src="../script/Slider.js"></script>
+    <script src="../script/Navbar.js"></script>
+</head>
+
+<link rel="stylesheet" href="../css/Home-Styles.css">
+
+<body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <aside class="demo-note">Voila · HCI design demonstration. Fictional company; forms validate locally. <a href="../../">Project overview</a></aside>
+    <header>
+        <div>
+            <a href="Home.html">
+                <img src="../images/logo.png" alt="Voila home" id="logo">
+            </a>
+        </div>
+        <div class="navbar" id="myNavbar">
+            <a href="#" class="currentPage">Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Models.html">Models</a>
+            <div class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn">
+                    Company
+                </a>
+                <div class="drop-content">
+                    <a href="About.html">About</a>
+                    <a href="Contact.html">Contact</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="show(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a>
+        </div>
+    </header>
+
+    <div id="content">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="sliderImg">
+                    <img src="../images/slider1.jpg" alt="">
+                    <p>The future of driving</p>
+                </div>
+                <div class="sliderImg">
+                    <img src="../images/slider2.jpg" alt="">
+                    <p>A vision things to come</p>
+                </div>
+                <div class="sliderImg">
+                    <img src="../images/slider3.jpg" alt="">
+                    <p>Innovation never get out of style</p>
+                </div>
+                <div class="sliderImg">
+                    <img src="../images/slider4.jpg" alt="">
+                    <p>It's time to change</p>
+                </div>
+            </div>
+            <button type="button" id="prev" aria-label="Previous slide">&#10094;</button>
+            <button type="button" id="next" aria-label="Next slide">&#10095;</button>
+        </div>
+
+        <div id="text">
+            <div class="title">
+                <p>Voila. Expect More.</p>
+            </div>
+            <div class="paragraph">
+                <p> Recharge is our new line of plug-in hybrid cars. <br> 
+                    Designed for a better way to move through the <br> 
+                    world with low to zero tailpipe emissions.</p>
+            </div>
+        </div>
+        <div id="container">
+            <div class="content1">
+                <div>
+                    <img src="../images/content1.jpg" alt=""  class="contentPicture">
+                </div>
+                <div class="title">
+                    <p>Improve every breath</p>
+                </div>
+                <div class="paragraph">
+                    <p>We care for the environment both outside
+                        and inside the car. Advanced filtration
+                        technology works as part of our world 
+                        first air quality system to help make the  
+                        air you breathe in the cabin clean.</p>
+                </div>
+            </div>
+            <div class="content1">
+                <div>
+                    <img src="../images/content2.jpg" alt=""  class="contentPicture">
+                </div>
+                <div class="title">
+                    <p>Sharpen your senses</p>
+                </div>
+                <div class="paragraph">
+                    <p>Head up display allows you to watch your 
+                        speed, follow turn-by-turn navigation,
+                        answer your phone calls, and more. All
+                        without looking away.</p>
+                </div>
+            </div>
+            <div class="content1">
+                <div>
+                    <img src="../images/content3.jpg" alt=""  class="contentPicture">
+                </div>
+                <div class="title">
+                    <p>Impress your guests</p>
+                </div>
+                <div class="paragraph">
+                    <p>From the front seats to the back, 
+                        exceptionally fine nappa leather creates an
+                        executive experience, including a centre 
+                        armrest that folds-down for long-distance
+                        relaxation and amenities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="socmed">
+            <a href="https://facebook.com/"><img src="../images/facebookLogo.png" alt="" class="socmed"></a>
+            <a href="https://instagram.com/"><img src="../images/instagraLogo.png" alt=""class="socmed"></a>
+            <a href="https://twitter.com/"><img src="../images/twitterLogo.png" alt="" class="socmed"></a>
+            <a href="https://youtube.com/"><img src="../images/youtubeLogo.png" alt="" class="socmed"></a>
+        </div>
+        Copyright &copy; 2020 by Bluejack 20-1
+    </footer>
+<link rel="stylesheet" href="../css/portfolio-fixes.css">
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false">
+<head>
+    <meta name="description" content="Voila — an interactive HCI design demonstration by Doddie Prawarjito.">
+    <script defer src="../script/portfolio-fixes.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Voila</title>
+</head>
+
+<script src="../script/Navbar.js"></script>
+<link rel="stylesheet" href="../css/Contact-Styles.css">
+
+<body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <aside class="demo-note">Voila · HCI design demonstration. Fictional company; forms validate locally. <a href="../../">Project overview</a></aside>
+    <header>
+        <div>
+            <a href="Home.html">
+                <img src="../images/logo.png" alt="Voila home" id="logo">
+            </a>
+        </div>
+        <div class="navbar" id="myNavbar">
+            <a href="Home.html">Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Models.html">Models</a>
+            <div class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn">
+                    Company
+                </a>
+                <div class="drop-content">
+                    <a href="About.html">About</a>
+                    <a href="Contact.html" class="currentPage">Contact</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="show(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a>
+        </div>
+    </header>
+
+    <div>
+        <img src="../images/contact.jpg" alt="" id="banner">
+    </div>
+    <div id="content">
+        <div class="paragraph">
+            <p>If you have questions, please don't hesitate to contact us.  
+                In order for us to give you the best possible help please 
+                make sure that you get in touch with the correct person or department.</p>
+        </div>
+        <div id="formAddress">
+            <div id="form">
+                <div class="title">
+                    <p>
+                        You can fill this form to ask your questions
+                    </p>
+                </div>
+                <form action="#" name="contactForm" onsubmit="return formCheck()" novalidate method="GET">
+                    <input type="text" id="name" name="name" placeholder="Full Name"><br>
+                    <Label>Gender :</Label><br>
+                    <div id="gender">
+                        <input type="radio" name="gender" id="male" value="male"> <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female"> <label for="female">Female</label>
+                    </div>
+                    <input type="text" id="email" name="email" placeholder="Email"><br>
+                    <select name="subject" id="subject">
+                        <option value="subject">Please choose the Subject</option>
+                        <option value="yourVolvo">I am confused about my Voila</option>
+                        <option value="manual">I want to ask things about the manual book</option>
+                        <option value="maintenance">i've read something about maintenance and have several questions</option>
+                        <option value="other">Others...</option>
+                    </select>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" onkeyup="adjustTextArea(this)"></textarea><br>
+                    <div id="check">
+                        <input type="checkbox" name="agree" id="agree"><label for="agree" >I agree to receive every notification from Voila</label><br>
+                    </div>
+                    <input type="submit" value="Send" id="submit">
+                    <div id="labelError" role="status" aria-live="polite"></div>
+                </form>
+            </div>
+            <div id="border"></div>
+            <div id="address">
+                <div class="title">
+                    <p>
+                        You can also visit our company, we will very much welcome your visit.
+                    </p>
+                    <p>
+                        Our Main Office Address
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <p>
+                        Jl. Raya Kb. Jeruk No.27, RT.2/RW.9, Kb. Jeruk, Kec. Kb. Jeruk, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11530
+                    </p>
+                </div>
+                <div class="title">
+                    <p>Customer Services</p>
+                </div>
+                <div class="paragraph">
+                    <p>Phone Number : (021) 12312300</p>
+                    <p>Email : CustomerServices@voila.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="socmed">
+            <a href="https://facebook.com/"><img src="../images/facebookLogo.png" alt="" class="socmed"></a>
+            <a href="https://instagram.com/"><img src="../images/instagraLogo.png" alt=""class="socmed"></a>
+            <a href="https://twitter.com/"><img src="../images/twitterLogo.png" alt="" class="socmed"></a>
+            <a href="https://youtube.com/"><img src="../images/youtubeLogo.png" alt="" class="socmed"></a>
+        </div>
+        Copyright &copy; 2020 by Bluejack 20-1
+    </footer>
+<link rel="stylesheet" href="../css/portfolio-fixes.css">
+</body>
+
+<script src="../script/Contact-Scripts.js"></script>
+
+
+</html>
