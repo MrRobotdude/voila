@@ -16,4 +16,6 @@ Open `index.html`, or run `python -m http.server 8080` from this folder. No depe
 
 ## Scope and attribution
 
+The presentation keeps Voila's full-width hero, original charcoal navigation and balanced three-column feature row. Responsive and accessibility repairs are scoped to this design. Its portfolio preview shows the full page without cropping and links directly to the running website.
+
 This is a fictional HCI company presentation, not a production car dealership or contact backend. Original layout, local media and jQuery are retained. Original pages retain Bluejack 20-1 attribution; the local Voila brief and repeated revisions establish its teaching context. Original institutional assessment documents and Photoshop working files are not published in this repository. Product photos belong to their original owners; they are shown as historical educational design references, not original photography.
